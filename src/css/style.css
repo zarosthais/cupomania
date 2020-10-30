@@ -1,0 +1,118 @@
+html {
+    font-size: 1rem;
+}
+
+.fonte-titulo {
+    font-family: 'Pacifico', cursive;
+}
+
+.barra-de-pesquisa {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cor-de-fundo {
+    background-color: #58387a;
+}
+
+.navbar-toggler {
+    border: 1px solid #8459b4;
+}
+
+b .form-control {
+    width: 100%;
+    height: 100%;
+}
+
+.card-imagem {
+    width: 18rem;
+    object-fit: cover;
+    object-position: 0 60%;
+}
+
+.card-imagem-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 60%;
+}
+
+.thumb-redondo {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 0 60%;
+}
+
+.fonte-seção {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.icones {
+    font-size: 2rem;
+}
+
+.texto-cor-especial {
+    color: #46C600!important;
+}
+
+.texto-cor-diferente {
+    color: white!important;
+}
+
+.borda-cor-especial {
+    border-color: #8459b4;
+}
+
+.btn-cor-especial {
+    background-color: #8D0606;
+    color: white;
+}
+
+#cor-titulo {
+    color: #8D0606;
+}
+
+#inicio {
+    padding: 1rem;
+    background-color: #F0FFFF;
+}
+
+#categorias {
+    background-color: #FFF5EE;
+}
+
+#cupom {
+    background-color: #FDF5E6;
+}
+
+.subtitulo {
+    font-size: 20px;
+    padding: 1rem;
+    color: #001a33;
+}
+
+.tamanho-imagem {
+    min-width: 110px;
+    width: 110px;
+    height: 88px;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}

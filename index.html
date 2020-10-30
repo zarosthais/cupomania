@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cuponomia</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top cor-de-fundo">
+            <a class="navbar-brand fonte-titulo texto-cor-especial" href="#">cuponomia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      </button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquise pelo nome da loja..." aria-label="Pesquisar">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link texto-cor-diferente" href="#">lojas</a>
+                    <a class="nav-item nav-link texto-cor-diferente" href="#">categorias</a>
+                    <a class="nav-item nav-link texto-cor-diferente" href="#" data-toggle="modal" data-target="#modal-contato">contato</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="py-5 px-2 mt-3">
+                <h1 class="text-center texto-cor-especial fonte-titulo">Cupons e cashback em 2.000 lojas</h1>
+                <p class="text-center subtitulo">Economize na sua compra usando os melhores Cupons de Desconto e Cashback!</p>
+            </div>
+        </section>
+
+        <section id="categorias">
+            <div class="container pb-5">
+                <h1 class="fonte-seção">Lojas</h1>
+                <div class="card-deck">
+                    <div class="card borda-cor-especial">
+                        <img class="card-img-top" src="src/img/cocobambu.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Coco Bambu</h5>
+                        </div>
+                    </div>
+                    <div class="card borda-cor-especial">
+                        <img class="card-img-top" src="src/img/sodiedoces.jpeg" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sodiê Doces</h5>
+                        </div>
+                    </div>
+                    <div class="card borda-cor-especial">
+                        <img class="card-img-top" src="src/img/giraffas.jpg" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Giraffas</h5>
+                        </div>
+                    </div>
+                    <div class="card borda-cor-especial">
+                        <img class="card-img-top" src="src/img/mcdonalds.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">McDonald's</h5>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="fonte-seção">Categorias</h1>
+                <div class="card-deck borda-cor-especia">
+                    <div class="card borda-cor-especial">
+                        <img class="card-img-top" src="src/img/brasileira.webp" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Brasileira</h5>
+                        </div>
+                    </div>
+                    <div class="card borda-cor-especial">
+                        <img class="card-img-top" src="src/img/doces-e-bolos.webp" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Doces e Bolos</h5>
+                        </div>
+                    </div>
+                    <div class="card borda-cor-especial">
+                        <img class="card-img-top" src="src/img/pizza.webp" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza</h5>
+                        </div>
+                    </div>
+                    <div class="card borda-cor-especial">
+                        <img class="card-img-top" src="src/img/saudavel.webp" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Saudável</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br/>
+        <br/>
+        <section id="cupom">
+            <div class="container pb-5">
+                <h1>Os melhores cupons da semana!</h1>
+                <br/>
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img class="mr-3 tamanho-imagem" src="src/img/giraffas.jpg" alt="Imagem do restaurante Giraffas">
+                        <div class="media-body">
+                            <h3 class="mt-0 mb-1">Sundae por apenas R$ 3,00</h3>
+                            <h5 class="text-secondary">Aproveite!</h5>
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <img class="mr-3 tamanho-imagem" src="src/img/mcdonalds.png" alt="Imagem do restaurante McDonald's">
+                        <div class="media-body">
+                            <h3 class="mt-0 mb-1">Bic Mac + Bebida 500ml por apenas R$ 14,90!</h3>
+                            <h5 class="text-secondary">Aproveite!</h5>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3 tamanho-imagem" src="src/img/sodiedoces.jpeg" alt="Imagem de exemplo genérica">
+                        <div class="media-body">
+                            <h3 class="mt-0 mb-1">Cupom Frete Grátis na Sodiê Doces!</h3>
+                            <h5 class="text-secondary">Aproveite!</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer -->
+
+    <footer id="footer" class="py-3 mx-auto cor-de-fundo">
+        <p class="text-center m-0 text-light text-decoration-none">A maneira mais fácil de economizar na internet.</p>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-secondary">© 2020 Copyright:
+            <a>cuponomia</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- footer -->
+
+    <!-- modal -->
+
+    <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <dialog class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </header>
+                <article class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="informe seu nome">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="informe seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="deixe sua mensagem" rows="3"></textarea>
+                        </div>
+                    </form>
+                </article>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-cor-especial">Enviar</button>
+                </footer>
+            </dialog>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
