@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>cupomania</title>
+    <title>Cupons de Desconto Giraffas</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
-    <link rel="stylesheet" type="text/css" href="src/css/index.css">
+    <link rel="stylesheet" type="text/css" href="src/css/lojas.css">
 </head>
 
 <body>
@@ -30,12 +30,12 @@
                     <form class="form-inline my-2 my-lg-0" id="busca-superior">
                         <input class="form-control mr-sm-2" type="search" onkeyup="mostraResultado(this.value)"
                             placeholder="Pesquise pelo nome da loja..." aria-label="Pesquisar">
-                            <div id="pesquisa"></div>
+                        <div id="pesquisa"></div>
                     </form>
                     <div class="navbar-nav">
                         <a class="nav-item nav-link texto-cor-diferente" href="index.html#lojas">lojas</a>
                         <!-- <a class="nav-item nav-link texto-cor-diferente"
-                            href="index.html#categorias">categorias</a> -->
+                            href="file:///C:/xampp/htdocs/cupomania/index.html#categorias">categorias</a> -->
                         <a class="nav-item nav-link texto-cor-diferente" data-toggle="modal"
                             data-target="#modal-contato" href="#">contato</a>
                     </div>
@@ -45,140 +45,52 @@
     </header>
 
     <main>
-        <section id="inicio">
-            <div class="pt-5 mt-3">
-                <h1 class="text-center texto-cor-especial fonte-titulo">Cupons e cashback em 2.000 lojas</h1>
-                <p class="text-center subtitulo">Economize na sua compra usando os melhores Cupons de Desconto e
-                    Cashback!</p>
-            </div>
-        </section>
-
-        <section id="lojas">
-            <div class="container pb-5">
-                <h1 class="fonte-seção texto-cinza">Lojas</h1>
-                <div class="card-deck">
-                    <div class="card borda-cor-especial">
-                        <a href="cocobambu.html">
-                            <img class="card-img-top" src="src/img/cocobambu.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">Coco Bambu</h5>
-                            </div>
-                    </div>
-                    </a>
-                    <div class="card borda-cor-especial">
-                        <a href="sodiedoces.html">
-                            <img class="card-img-top" src="src/img/sodiedoces.jpeg" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">Sodiê Doces</h5>
-                            </div>
-                    </div>
-                    </a>
-                    <div class="card borda-cor-especial">
-                        <a href="giraffas.html">
-                            <img class="card-img-top" src="src/img/giraffas.jpg" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">Giraffas</h5>
-                            </div>
-                    </div>
-                    </a>
-                    <div class="card borda-cor-especial">
-                        <a href="mcdonalds.html">
-                            <img class="card-img-top" src="src/img/mcdonalds.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">McDonald's</h5>
-                            </div>
-                    </div>
-                    </a>
+        <section id="inicio-coco">
+            <div class="container cupom">
+                <img src="src/img/giraffas.jpg" class="mr-3 align-self-center tamanho-imagem thumb-redondo" alt="...">
+                <div class="media-body">
+                    <h3>Cupons de Desconto Giraffas</h5>
+                        <p class="descricao-loja">Atualizado em 13/11/2020.</p>
+                        <p class="descricao-loja">Encontramos 02 cupons de desconto para Giraffas.</p>
                 </div>
             </div>
         </section>
 
-        <!-- <section id="categorias">
-            <div class="container pb-5">
-                <h1 class="fonte-seção texto-cinza">Categorias</h1>
-                <div class="card-deck">
-                    <div class="card borda-cor-especial" href=>
-                        <img class="card-img-top" src="src/img/brasileira.webp" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title">Brasileira</h5>
-                        </div>
-                    </div>
-                    <div class="card borda-cor-especial">
-                        <img class="card-img-top" src="src/img/doces-e-bolos.webp" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title">Doces e Bolos</h5>
-                        </div>
-                    </div>
-                    <div class="card borda-cor-especial">
-                        <img class="card-img-top" src="src/img/pizza.webp" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title">Pizza</h5>
-                        </div>
-                    </div>
-                    <div class="card borda-cor-especial">
-                        <img class="card-img-top" src="src/img/saudavel.webp" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title">Saudável</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+        <br />
+        <br />
+        <br />
 
-        <br />
-        <br />
         <section id="cupom">
             <div class="container pb-5">
-                <h1 class="text-center texto-cinza fonte-titulo">Os melhores cupons da semana!</h1>
+                <h1 class="texto-cinza fonte-titulo">Ativos:</h1>
                 <br />
                 <ul class="list-unstyled">
                     <li class="media p-2">
-                        <img class="mr-3 tamanho-imagem thumb-redondo" src="src/img/giraffas.jpg"
-                            alt="Imagem do restaurante Giraffas">
+                        <span class="texto-desconto">50% OFF</span>
                         <div class="media-body">
                             <h3 class="mt-0 mb-1">Sundae por apenas R$ 3,00</h3>
-                            <h5 class="text-secondary">Aproveite!</h5>
                         </div>
                         <div class="box">
                             <div class="box-wrapper">
                                 <p class="cupom-nome">CUPOM3S</p>
                                 </br>
-                                <button class="btn btn-success" title="Copiar texto" onclick="copiarTexto1()">Copiar
-                                    Texto</button>
+                                <button class="btn btn-success efeito-botao" title="Copiar texto"
+                                    onclick="copiarCupom1()">Copiar Cupom</button>
                             </div>
                         </div>
                     </li>
-                    <br />
                     <li class="media p-2">
-                        <img class="mr-3 tamanho-imagem thumb-redondo" src="src/img/mcdonalds.png"
-                            alt="Imagem do restaurante McDonald's">
+                        <span class="texto-desconto">R$15</span>
                         <div class="media-body">
-                            <h3 class="mt-0 mb-1">Bic Mac + Bebida 500ml por apenas R$ 14,90!</h3>
+                            <h3 class="mt-0 mb-1">Pratos selecionados por apenas R$15, acompanha bebida 300ml</h3>
                             <h5 class="text-secondary">Aproveite!</h5>
                         </div>
                         <div class="box">
                             <div class="box-wrapper">
-                                <p class="cupom-nome">CUPOMAC</p>
+                                <p class="cupom-nome">15GIRAFFA</p>
                                 </br>
-                                <button class="btn btn-success" title="Copiar texto" onclick="copiarTexto2()">Copiar
-                                    Texto</button>
-                            </div>
-                        </div>
-                    </li>
-                    <br />
-                    <li class="media p-2">
-                        <img class="mr-3 tamanho-imagem thumb-redondo" src="src/img/sodiedoces.jpeg"
-                            alt="Imagem do restaurante Sôdie Doces">
-                        <div class="media-body">
-                            <h3 class="mt-0 mb-1">Cupom Frete Grátis na Sodiê Doces!</h3>
-                            <h5 class="text-secondary">Aproveite!</h5>
-                        </div>
-                        <div class="box">
-                            <div class="box-wrapper">
-                                <p class="cupom-nome">FRETESODIE</p>
-                                </br>
-                                <button class="btn btn-success" title="Copiar texto" onclick="copiarTexto3()">Copiar
-                                    Texto</button>
+                                <button class="btn btn-success efeito-botao" title="Copiar texto"
+                                    onclick="copiarCupom2()">Copiar Cupom</button>
                             </div>
                         </div>
                     </li>
@@ -186,6 +98,7 @@
             </div>
         </section>
     </main>
+
 
     <!-- footer -->
 
@@ -254,7 +167,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <script>
-        let copiarTexto1 = () => {
+        let copiarCupom1 = () => {
             //O texto que será copiado
             const texto = "CUPOM3S";
             //Cria um elemento input (pode ser um textarea)
@@ -271,9 +184,9 @@
             document.body.removeChild(inputTest);
         };
 
-        let copiarTexto2 = () => {
+        let copiarCupom2 = () => {
             //O texto que será copiado
-            const texto = "CUPOMAC";
+            const texto = "15GIRAFFA";
             //Cria um elemento input (pode ser um textarea)
             let inputTest = document.createElement("input");
             inputTest.value = texto;
@@ -287,40 +200,6 @@
             //remove o elemento
             document.body.removeChild(inputTest);
         };
-
-        let copiarTexto3 = () => {
-            //O texto que será copiado
-            const texto = "FRETESODIE";
-            //Cria um elemento input (pode ser um textarea)
-            let inputTest = document.createElement("input");
-            inputTest.value = texto;
-            //Anexa o elemento ao body
-            document.body.appendChild(inputTest);
-            //seleciona todo o texto do elemento
-            inputTest.select();
-            //executa o comando copy
-            //aqui é feito o ato de copiar para a area de trabalho com base na seleção
-            document.execCommand('copy');
-            //remove o elemento
-            document.body.removeChild(inputTest);
-        };
-
-        $(function () {
-            $("#pesquisa").keyup(function () {
-                // recuperar o valor do campo
-                var pesquisa = $(this).val();
-
-                // verificar se há algo digitado
-                if (pesquisa != '') {
-                    var dados = {
-                        palavra: pesquisa
-                    }
-                    $.post('pesquisa.php', dados, function (retorna) {
-                        $(".resultado").html(retorna);
-                    });
-                }
-            })
-        })
 
         // função de pesquisa
         function mostraResultado(str) {
@@ -334,9 +213,9 @@
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("pesquisa").innerHTML = this.responseText;
                     document.getElementById("pesquisa").style.color = "white";
-                    document.getElementById("pesquisa").style.border= "1px #28a745";
-                    document.getElementById("pesquisa").style.backgroundColor= "#28a745";
-                    
+                    document.getElementById("pesquisa").style.border = "1px #28a745";
+                    document.getElementById("pesquisa").style.backgroundColor = "#28a745";
+
                 }
             }
             xmlhttp.open("GET", "pesquisa.php?q=" + str, true);

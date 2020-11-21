@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cupons de Desconto Sôdie Doces</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/lojas.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top cor-de-fundo">
+            <div class="container justify-content-center">
+                <a class="navbar-brand fonte-titulo texto-cor-especial" href="index.html">cupomania <i
+                        class="fa fa-tags" aria-hidden="true"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <form class="form-inline my-2 my-lg-0" id="busca-superior">
+                        <input class="form-control mr-sm-2" type="search" onkeyup="mostraResultado(this.value)"
+                            placeholder="Pesquise pelo nome da loja..." aria-label="Pesquisar">
+                        <div id="pesquisa"></div>
+                    </form>
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link texto-cor-diferente" href="index.html#lojas">lojas</a>
+                        <!-- <a class="nav-item nav-link texto-cor-diferente"
+                            href="file:///C:/xampp/htdocs/cupomania/index.html#categorias">categorias</a> -->
+                        <a class="nav-item nav-link texto-cor-diferente" data-toggle="modal"
+                            data-target="#modal-contato" href="#">contato</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio-coco">
+            <div class="container cupom">
+                <img src="src/img/sodiedoces.jpeg" class="mr-3 align-self-center tamanho-imagem thumb-redondo"
+                    alt="...">
+                <div class="media-body">
+                    <h3>Cupons de Desconto Sôdie Doces</h5>
+                        <p class="descricao-loja">Atualizado em 13/11/2020.</p>
+                        <p class="descricao-loja">Encontramos 01 cupom de desconto para Sôdie Doces.</p>
+                </div>
+            </div>
+        </section>
+
+        <br />
+        <br />
+        <br />
+
+        <section id="cupom">
+            <div class="container pb-5">
+                <h1 class="texto-cinza fonte-titulo">Ativos:</h1>
+                <br />
+                <ul class="list-unstyled">
+                    <li class="media p-2">
+                        <span class="texto-desconto">FRETE OFF</span>
+                        <div class="media-body">
+                            <h3 class="mt-0 mb-1">Cupom Frete Grátis na Sodiê Doces!</h3>
+                        </div>
+                        <div class="box">
+                            <div class="box-wrapper">
+                                <p class="cupom-nome">FRETESODIE</p>
+                                </br>
+                                <button class="btn btn-success efeito-botao" title="Copiar texto"
+                                    onclick="copiarCupom1()">Copiar Cupom</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer -->
+
+    <footer id="footer" class="py-3 mx-auto cor-de-fundo">
+        <p class="text-center m-0 text-light text-decoration-none">A maneira mais fácil de economizar na internet.</p>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-secondary">© 2020 Copyright:
+            <a>cupomania</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- footer -->
+
+    <!-- modal contato -->
+    <div class="modal" tabindex="-1" id="modal-contato">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Entre em contato!
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="contato.php" method="POST">
+                    <div class="modal-body">
+                        <p> Envie uma mensagem preenchendo o formulário abaixo:</p>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            </div>
+                            <input type="text" name="nome" class="form-control" placeholder="Nome" aria-label="nome"
+                                required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="E-mail"
+                                aria-label="E-mail">
+                            <div class="input-group-append">
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            </div>
+                            <textarea class="form-control" name="mensagem" aria-label="With textarea"
+                                required></textarea>
+                        </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" name="enviar">Enviar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal contato -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script>
+        let copiarCupom1 = () => {
+            //O texto que será copiado
+            const texto = "FRETESODIE";
+            //Cria um elemento input (pode ser um textarea)
+            let inputTest = document.createElement("input");
+            inputTest.value = texto;
+            //Anexa o elemento ao body
+            document.body.appendChild(inputTest);
+            //seleciona todo o texto do elemento
+            inputTest.select();
+            //executa o comando copy
+            //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+            document.execCommand('copy');
+            //remove o elemento
+            document.body.removeChild(inputTest);
+        };
+
+        // função de pesquisa
+        function mostraResultado(str) {
+            if (str.length == 0) {
+                document.getElementById("pesquisa").innerHTML = "";
+                document.getElementById("pesquisa").style.border = "0px";
+                return;
+            }
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("pesquisa").innerHTML = this.responseText;
+                    document.getElementById("pesquisa").style.color = "white";
+                    document.getElementById("pesquisa").style.border = "1px #28a745";
+                    document.getElementById("pesquisa").style.backgroundColor = "#28a745";
+
+                }
+            }
+            xmlhttp.open("GET", "pesquisa.php?q=" + str, true);
+            xmlhttp.send();
+        }
+    </script>
+</body>
+
+</html>

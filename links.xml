@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages>
+  <link>
+    <title>Coco Bambu</title>
+    <url>cocobambu.html</url>
+  </link>
+  <link>
+    <title>Sodiê Doces</title>
+    <url>sodiedoces.html</url>
+  </link>
+  <link>
+    <title>Giraffas</title>
+    <url>giraffas.html</url>
+  </link>
+  <link>
+    <title>McDonald's</title>
+    <url>mcdonalds.html</url>
+  </link>
+</pages>

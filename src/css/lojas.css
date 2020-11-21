@@ -1,0 +1,65 @@
+#inicio-coco {
+    padding-top: 4.5rem;
+}
+
+.cupom {
+    position: relative;
+    align-items: center;
+    color: #3F3F3F;
+    display: flex;
+    padding: 20px 0 10px;
+}
+
+.header {
+    position: relative;
+    align-items: center;
+    color: #3F3F3F;
+    display: flex;
+    padding: 20px 0 10px;
+}
+
+.logo {
+    padding-bottom: 45px;
+}
+
+.cupom-info {
+    position: static;
+    color: #3F3F3F;
+    display: block;
+    font-size: 12px;
+    line-height: 100%;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.descricao-loja {
+    margin: 0;
+}
+
+.texto-desconto {
+    color: #42A40D;
+    margin-right: 20px;
+    padding: 5px 5px 5px 0;
+    text-align: center;
+    width: 120px;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.tamanho-imagem {
+    min-width: 110px;
+    width: 110px;
+    height: 100px;
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    footer {
+        position: fixed;
+        height: 100px;
+        bottom: 0;
+        width: 100%;
+    }
+}
