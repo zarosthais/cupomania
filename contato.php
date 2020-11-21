@@ -11,13 +11,13 @@ $mensagem = $_POST['mensagem'];
 
 // manda para o email
 
-// $to = "zarosthais@gmail.com";
-// $subject = "Contato - Cupomania";
-// $body = "Nome: " .$nome. "\rn\n";
-//          "Email: " .$email. "\rn\n";
-//          "Mensagem: ".$mensagem;
+$to = "zarosthais@gmail.com"; 
+$subject = "Contato - Cupomania";
+$body = "Nome: " .$nome. "\rn\n";
+          "Email: " .$email. "\rn\n";
+         "Mensagem: ".$mensagem;
 
-// $header = "From: zarosthais@gmail.com"."\rn\n"."Reply-To:".$email."\r\n"."X=Mailer:PHP/".phpversion();
+$header = "From: zarosthais@gmail.com"."\rn\n"."Reply-To:".$email."\r\n"."X=Mailer:PHP/".phpversion();
 
 if (mail($to,$subject,$body,$header)) {
         // adiciona no banco de dados
